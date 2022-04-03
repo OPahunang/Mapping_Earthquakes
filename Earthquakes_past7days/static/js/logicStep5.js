@@ -93,8 +93,8 @@ function getRadius(magnitude) {
 
 // Retrieve the earthquake GeoJSON data.
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
-  
-// Creating a GeoJSON layer with the retrieved data.
+
+  // Creating a GeoJSON layer with the retrieved data.
   L.geoJSON(data, {
     // We turn each feature into a circleMarker on the map.
     pointToLayer: function(feature, latlng) {
@@ -108,12 +108,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     //  location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
     layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
-    }
-  }).addTo(earthquakes);
-
-  // Then we add the earthquake layer to our map.
-  earthquakes.addTo(map);
-
+    
 // Create a legend control object.
 var legend = L.control({
   position: "bottomright"
