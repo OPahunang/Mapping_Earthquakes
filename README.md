@@ -55,7 +55,10 @@ o	The major earthquake layer group variable is added to the map
 
 ### Deliverable 3
 
-•	Add an additional map
+•	A third map tile layer is created 
+•	The third map is added to the overlay object 
+•	All the earthquake data and tectonic plate data are displayed on the all maps of the webpage
+
 
 ![deliv3-map.png](https://github.com/OPahunang/Mapping_Earthquakes/blob/main/resources/deliv3-map.png)
 
