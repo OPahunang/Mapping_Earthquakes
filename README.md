@@ -19,6 +19,7 @@ Data are retrieved at US Geological Survey real-time earthquake GeoJSON and GitH
 
 
 •	The d3.json() callback is working and does the following: 
+
 o	The tectonic plate data is passed to the geoJSON() layer
 o	The geoJSON() layer adds color and width to the tectonic plate lines
 o	The tectonic layer group variable is added to the map
@@ -37,6 +38,7 @@ o	The tectonic layer group variable is added to the map
 •	The major earthquake data is added as a third layer group 
 •	The major earthquake data is added to the overlay object 
 •	The d3.json() callback is working and does the following: 
+
 o	Sets the color and diameter of each earthquake.
 o	The major earthquake data is passed to the geoJSON() layer.
 o	The geoJSON() layer creates a circle for each major earthquake, and adds a popup for each circle to display the magnitude and location of the earthquake
